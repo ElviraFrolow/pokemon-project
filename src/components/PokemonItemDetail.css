@@ -1,0 +1,63 @@
+@font-face {
+  font-family: Pokemon;
+  src: url(../fonts/pokemon/Pokemon\ Solid.ttf);
+}
+
+@font-face {
+  font-family: Roboto-Bold;
+  src: url(../fonts/Roboto/Roboto-Bold.ttf);
+}
+
+.pokemon-detail-container {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.pokemon-detail-display {
+  background-color: #ccdadd;
+  width: 375px;
+  border-radius: 30px;
+  padding: 23px 20px;
+  margin: 20px auto;
+  height: 90vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pokemon-detail-logo {
+  padding-bottom: 1rem;
+}
+
+.searchbar {
+  padding-bottom: 2rem;
+}
+
+.pokemon-detail-header {
+  width: 375px;
+  padding: 0px 2rem 1rem;
+}
+
+.pokemon-detail-headline {
+  display: flex;
+  gap: 1rem;
+  font-size: 2rem;
+  -webkit-text-stroke: 2px #2c72b8;
+  color: #ffcb05;
+  font-weight: bold;
+  font-family: Pokemon;
+}
+
+.pokemon-detail-img {
+  width: 300px;
+}
+
+.pokemon-detail-item {
+  background: linear-gradient(52.41deg, #ffe1c6 4.87%, #ffcb05 94.37%);
+  width: 300px;
+  border-radius: 15px;
+  margin-bottom: 16px;
+  position: relative;
+}
