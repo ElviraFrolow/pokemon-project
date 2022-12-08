@@ -20,7 +20,7 @@
   border-radius: 30px;
   padding: 23px 20px;
   margin: 20px auto;
-  height: 90vh;
+  min-height: 90vh;
   padding: 2rem;
   display: flex;
   flex-direction: column;
@@ -51,12 +51,14 @@
 }
 
 .pokemon-detail-img {
-  width: 300px;
+  max-width: 300px;
+  min-width: 300px;
 }
 
 .pokemon-detail-item {
   background: linear-gradient(52.41deg, #ffe1c6 4.87%, #ffcb05 94.37%);
-  width: 300px;
+  max-width: 300px;
+  min-width: 300px;
   border-radius: 15px;
   margin-bottom: 16px;
   position: relative;
