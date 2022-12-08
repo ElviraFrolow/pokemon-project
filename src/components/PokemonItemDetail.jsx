@@ -1,9 +1,13 @@
 import { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
+import "../pages/Home.css";
+import "./PokemonItemDetail.css";
+import Arrow from "../imgs/back.svg";
+import pokemonimg from "../imgs/pokemon.svg";
+import ModeIcon from "../imgs/mode.svg";
 
 const PokemonItemDetail = () => {
   const { id } = useParams();
-  // console.log("id", id);
   const [pokemonDetails, setPokemonDetails] = useState([]);
 
   const fetchDataDetails = () => {
@@ -16,20 +20,33 @@ const PokemonItemDetail = () => {
   useEffect(fetchDataDetails, [id]);
 
   return (
-    <article>
+    <article className="pokemon-detail-container">
       {pokemonDetails.map((elt) => (
-        <div key={elt.id}>
-          <img src={elt.sprites.front_default} alt="" />
-          <div>
-            <p>{elt.name}</p>
+        <div className="pokemon-detail-display" key={elt.id}>
+          <img className="pokemon-detail-logo" src={pokemonimg} alt="" />
+          <div className="searchbar">
+            <Link to="/">
+              <img src={Arrow} alt="" />{" "}
+            </Link>
+            <input type="text" name="" id="" placeholder="Search Pokemon" />
+            <img src={ModeIcon} alt="" />
+          </div>
+          <div className="pokemon-detail-item">
+            <img
+              src={elt.sprites.front_default}
+              alt=""
+              className="pokemon-detail-img"
+            />
+          </div>
+          <div className="pokemon-detail-headline">
             <p>#00{elt.id}</p>
+            <p>{elt.name}</p>
           </div>
           <div>
             <button>Poison</button>
             <button>Grass</button>
           </div>
           <div>Attacks and Movement</div>
-          <Link to="/">zurück</Link>
         </div>
       ))}
     </article>
