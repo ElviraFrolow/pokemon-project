@@ -23,7 +23,6 @@ const Home = () => {
           <img src={burgermenu} alt="" />
         </Link>
         <input type="text" name="" id="" placeholder="Search Pokemon" />
-        {/* <SearchBar infos2={infos2} setSearchResults={setSearchResults} /> */}
         <img src="" alt="" />
       </div>
       <article className="grid">
