@@ -1,0 +1,149 @@
+@font-face {
+  font-family: roboto900;
+  src: url(../fonts/Roboto-Black.ttf);
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  place-items: center;
+  gap: 30px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.close {
+  width: 30px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.header .logo {
+  width: 40%;
+}
+
+.type {
+  font-family: roboto900;
+  font-style: normal;
+  text-align: center;
+  font-size: 40px;
+  color: #FFCB05;
+  line-height: 35px;
+  -webkit-text-stroke: 3px #2c72b8;
+  margin-bottom: 20px;
+}
+
+button {
+  width: 120px;
+  height: 35px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+
+
+button:nth-of-type(1) {
+  background-color: #B3B3B3;
+}
+
+button:nth-of-type(2) {
+  background-color: #E40000;
+}
+
+button:nth-of-type(3) {
+  background-color: #CCDADD;
+  ;
+}
+
+button:nth-of-type(4) {
+  background-color: #AB00AE;
+}
+
+button:nth-of-type(5) {
+  background-color: #965A00;
+}
+
+button:nth-of-type(6) {
+  background-color: #E1B237;
+}
+
+button:nth-of-type(7) {
+  background-color: #3BB900;
+}
+
+button:nth-of-type(8) {
+  background-color: #5A1E64;
+}
+
+button:nth-of-type(9) {
+  background-color: #2A4950;
+}
+
+button:nth-of-type(10) {
+  background-color: #FF9900;
+}
+
+button:nth-of-type(11) {
+  background-color: #00A0E4;
+}
+
+button:nth-of-type(12) {
+  background-color: #57921C;
+}
+
+button:nth-of-type(13) {
+  background-color: #FFE600;
+}
+
+button:nth-of-type(14) {
+  background-color: #FF81F2;
+}
+
+button:nth-of-type(15) {
+  background-color: #6AD2FF;
+}
+
+button:nth-of-type(16) {
+  background-color: #00458A;
+}
+
+button:nth-of-type(17) {
+  background-color: #1C1C1C;
+  ;
+}
+
+button:nth-of-type(18) {
+  background-color: #FFC2F9;
+}
+
+button:nth-of-type(19) {
+  background-color: #ff7979;
+}
+
+button:nth-of-type(20) {
+  background-color: #00ff66;
+}
+
+.pokemon-liste .search {
+  margin: 150px auto;
+  font-family: Roboto900;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  width: 194px;
+  height: 51px;
+  color: #2C72B8;
+  background-color: #FFCB05;
+  border: 5px solid #2C72B8;
+  border-radius: 10px;
+}

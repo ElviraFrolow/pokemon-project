@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import PokemenItem from "../components/PokemonItem";
 import pokemonimg from "../imgs/pokemon.svg";
+import burgermenu from "../imgs/menu.svg";
+// import SearchBar from "../components/SearchBar";
 
 import "./Home.css";
 const Home = () => {
@@ -17,10 +19,11 @@ const Home = () => {
     <section className="pokemon-liste">
       <img className="logo" src={pokemonimg} alt="" />
       <div className="searchbar">
-        <Link to="/">
-          <img src="" alt="" />{" "}
+        <Link to="/filter">
+          <img src={burgermenu} alt="" />
         </Link>
         <input type="text" name="" id="" placeholder="Search Pokemon" />
+        {/* <SearchBar infos2={infos2} setSearchResults={setSearchResults} /> */}
         <img src="" alt="" />
       </div>
       <article className="grid">
@@ -31,5 +34,4 @@ const Home = () => {
     </section>
   );
 };
-
 export default Home;

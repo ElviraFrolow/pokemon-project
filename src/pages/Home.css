@@ -8,12 +8,14 @@
   flex-direction: column;
   gap: 23px;
 }
+
 .searchbar {
   display: flex;
   gap: 20px;
   justify-content: center;
   align-items: center;
 }
+
 input {
   width: 247px;
   height: 32px;
@@ -23,6 +25,7 @@ input {
   color: #909090;
   border: none;
 }
+
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -32,10 +35,12 @@ input {
   transition: all 0.5 0s ease, all 0.5s 0s ease;
   transition: all 0.5s 0s ease, all 0.5s 0s ease;
 }
+
 .pokemon-img {
-  width: 120.66px;
+  width: 100px;
   /* height: 124px; */
 }
+
 .pokemen-item {
   background: linear-gradient(52.41deg, #ffe1c6 4.87%, #ffcb05 94.37%);
   width: 158px;
@@ -46,6 +51,7 @@ input {
   text-align: center;
   position: relative;
 }
+
 .pokemen-info {
   width: 100%;
   display: flex;
