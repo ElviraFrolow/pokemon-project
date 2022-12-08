@@ -42,11 +42,12 @@ const PokemonItemDetail = () => {
             <p>#00{elt.id}</p>
             <p>{elt.name}</p>
           </div>
-          <div>
-            <button>Poison</button>
-            <button>Grass</button>
+          <div className="ability-div">
+            {elt.types.map((element, index) => (
+              <button key={index}>{element.type.name.toUpperCase()}</button>
+            ))}
           </div>
-          <div>Attacks and Movement</div>
+          <div className="attack">Attacks and Movement</div>
         </div>
       ))}
     </article>

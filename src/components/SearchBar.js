@@ -1,4 +1,4 @@
-import PokemonItem from "./PokemonItem";
+// import PokemonItem from "./PokemonItem";
 const SearchBar = ({ infos2, setSearchResults }) => {
   const handleSubmit = (event) => event.preventDefault();
 

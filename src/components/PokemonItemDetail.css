@@ -41,6 +41,7 @@
 }
 
 .pokemon-detail-headline {
+  margin-top: 20px;
   display: flex;
   gap: 1rem;
   font-size: 2rem;
@@ -59,7 +60,21 @@
   background: linear-gradient(52.41deg, #ffe1c6 4.87%, #ffcb05 94.37%);
   max-width: 300px;
   min-width: 300px;
-  border-radius: 15px;
+  border-radius: 25px;
   margin-bottom: 16px;
   position: relative;
+}
+
+.attack {
+  color: #ffcb05;
+  text-transform: uppercase;
+  font-family: Roboto-Bold;
+  margin-top: 30px;
+  font-size: 18px;
+}
+
+.ability-div {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
 }
