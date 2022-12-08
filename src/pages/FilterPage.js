@@ -7,18 +7,21 @@ import "./FilterPage.css";
 
 const FilterPage = () => {
   const [abilities, setAbilities] = useState([]);
-  // const [filter, setFilter] = useState("");
+  const [filter, setFilter] = useState(true);
   const fetchAbility = () => {
     fetch("https://pokeapi.co/api/v2/type/")
       .then((res) => res.json())
-      .then((json) => setAbilities(json.results));
+      .then((json) => {
+        setAbilities(json.results);
+        // setFilter( false );
+      });
   };
-  useEffect(fetchAbility, []);
+  useEffect(fetchAbility, [filter]);
   console.log(abilities);
 
   //Reset Function
   const resetSearch = () => {
-    setAbilities(abilities);
+    setFilter(!filter);
   };
   //click on ability function
   const handleOnClick = (e) => {
