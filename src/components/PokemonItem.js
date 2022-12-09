@@ -14,12 +14,10 @@ const PokemenItem = (props) => {
       });
   };
   useEffect(fetchdata2, [props.url]);
-  console.log(infos2);
-
   return (
     <div className="pokemen-item">
       {infos2.map((elt) => (
-        <div key={elt.id}>
+        <div className="carte" key={elt.id}>
           <Link to={`/pokemon/${elt.id}`}>
             <img
               className="pokemon-img"
@@ -29,12 +27,11 @@ const PokemenItem = (props) => {
           </Link>
           <div className="pokemen-info">
             <p>#00{elt.id}</p>
-            <p>{elt.name}</p>
+            <p className="pokemon-name">{elt.name}</p>
           </div>
         </div>
       ))}
     </div>
   );
 };
-
 export default PokemenItem;

@@ -29,7 +29,15 @@ const PokemonItemDetail = () => {
               <img src={Arrow} alt="" />{" "}
             </Link>
             <input type="text" name="" id="" placeholder="Search Pokemon" />
-            <img src={ModeIcon} alt="" />
+            <img
+              onClick={() => {
+                document.querySelector(
+                  ".pokemon-detail-display"
+                ).style.backgroundColor = "black";
+              }}
+              src={ModeIcon}
+              alt=""
+            />
           </div>
           <div className="pokemon-detail-item">
             <img
